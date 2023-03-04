@@ -1,0 +1,5 @@
+baseURL = 'http://talsulin.github.io/'
+languageCode = 'en-us'
+title = '352 Game Hub'
+
+theme="papercss-hugo-theme"

@@ -1,10 +1,9 @@
 ---
-title: "macOS terminal command"
+title: "terminal command"
 date: 2023-03-16T13:00:00-06:00
 tags: [learning, tutorial]
 show_summary: false 
 ---
-# macOS terminal command
 
 ## WSL&Clash
 ### create `~/.proxy` file
@@ -25,8 +24,11 @@ export all_proxy="socks5://${hostip}:7890"
 source ~/.proxy
 ```
 
-### cudatoolkit & cudnn & pytorch
+### conda & cudatoolkit & cudnn & pytorch
 ```shell
+#conda
+curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+bash Mambaforge-$(uname)-$(uname -m).sh
 #cudatoolkit
 wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.0-1_all.deb
 sudo dpkg -i cuda-keyring_1.0-1_all.deb

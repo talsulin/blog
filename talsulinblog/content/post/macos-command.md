@@ -40,6 +40,12 @@ sudo apt install nvidia-cudnn
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia  
 ```
 
+### ssh
+```shell
+cd .ssh
+ssh-keygen
+cat id_rsa.pub | ssh XX@111.111.11.111 'cat >>.ssh/authorized_keys'
+```
 
 
 ## Building terminal

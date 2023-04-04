@@ -18,7 +18,7 @@ show_summary: false
 
 ### {{< badge "success" >}}done{{< /badge >}} 第二章 ~~基于蓝牙的AoA角度估计~~ `相关工作`
 
-1. {{< badge "success" >}}done{{< /badge >}} 蓝牙AoA工作原理 
+1. 蓝牙AoA工作原理 
 2. 典型`蓝牙`~~的~~AoA~~的角度~~估计方法
     1. 理想模型 
     2. 波束成形方法 

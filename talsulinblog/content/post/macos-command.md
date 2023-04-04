@@ -92,6 +92,28 @@ ls /dev/tty.*
 
 ### run exe file
 ```shell
-/Users/sulin/Desktop/ula1x4rtb -u /dev/cu.usbmodem0004401671811 | tee ~/Desktop/out.txt
+timeout 120 /Users/sulin/Desktop/ula1x4rtb -u /dev/cu.usbmodem0004401671811 | tee ~/Desktop/out.txt
 #file_path COM_port | output_file
+```
+## u-Blox
+```shell
+# flashing c211 antanna board
+brew tap runtimeco/homebrew-mynewt
+brew install mynewt-newtmgr
+# Use Newt Manager to install u-connectLocate on the NINA-B411 module:
+newtmgr --conntype=serial --connstring="COMXX,baud=115200" image upload <binary image>
+# Press the reset button to reset the application board or reset it with newtmgr:
+newtmgr --conntype=serial --connstring="COMXX,baud=115200" reset
+
+#flashing c209 antanna board
+nrfutil dfu serial -pkg app.zip -p COMXXX -b 115200 -fc 1 -t 1
+```
+
+## ti
+```shell
+# envirenment
+package.sh -c -b -u -i
+pip install -r requirements.txt
+# run file
+python -u examples/rtls_connected.py
 ```

@@ -1,5 +1,5 @@
 ---
-title: "terminal command"
+title: "Terminal Command"
 date: 2023-03-16T13:00:00-06:00
 tags: [learning, tutorial]
 show_summary: false 
